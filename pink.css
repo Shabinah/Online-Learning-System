@@ -1,56 +1,74 @@
-/* iCheck plugin Flat skin, pink
+/* iCheck plugin Line skin, pink
 ----------------------------------- */
-.icheckbox_flat-pink,
-.iradio_flat-pink {
-    display: inline-block;
-    *display: inline;
-    vertical-align: middle;
+.icheckbox_line-pink,
+.iradio_line-pink {
+    position: relative;
+    display: block;
     margin: 0;
-    padding: 0;
-    width: 20px;
-    height: 20px;
-    background: url(pink.png) no-repeat;
+    padding: 5px 15px 5px 38px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #fff;
+    background: #a77a94;
     border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     cursor: pointer;
 }
-
-.icheckbox_flat-pink {
-    background-position: 0 0;
-}
-    .icheckbox_flat-pink.checked {
-        background-position: -22px 0;
+    .icheckbox_line-pink .icheck_line-icon,
+    .iradio_line-pink .icheck_line-icon {
+        position: absolute;
+        top: 50%;
+        left: 13px;
+        width: 13px;
+        height: 11px;
+        margin: -5px 0 0 0;
+        padding: 0;
+        overflow: hidden;
+        background: url(line.png) no-repeat;
+        border: none;
     }
-    .icheckbox_flat-pink.disabled {
-        background-position: -44px 0;
+    .icheckbox_line-pink.hover,
+    .icheckbox_line-pink.checked.hover,
+    .iradio_line-pink.hover {
+        background: #B995A9;
+    }
+    .icheckbox_line-pink.checked,
+    .iradio_line-pink.checked {
+        background: #a77a94;
+    }
+        .icheckbox_line-pink.checked .icheck_line-icon,
+        .iradio_line-pink.checked .icheck_line-icon {
+            background-position: -15px 0;
+        }
+    .icheckbox_line-pink.disabled,
+    .iradio_line-pink.disabled {
+        background: #E0D0DA;
         cursor: default;
     }
-    .icheckbox_flat-pink.checked.disabled {
-        background-position: -66px 0;
+        .icheckbox_line-pink.disabled .icheck_line-icon,
+        .iradio_line-pink.disabled .icheck_line-icon {
+            background-position: -30px 0;
+        }
+    .icheckbox_line-pink.checked.disabled,
+    .iradio_line-pink.checked.disabled {
+        background: #E0D0DA;
     }
-
-.iradio_flat-pink {
-    background-position: -88px 0;
-}
-    .iradio_flat-pink.checked {
-        background-position: -110px 0;
-    }
-    .iradio_flat-pink.disabled {
-        background-position: -132px 0;
-        cursor: default;
-    }
-    .iradio_flat-pink.checked.disabled {
-        background-position: -154px 0;
-    }
+        .icheckbox_line-pink.checked.disabled .icheck_line-icon,
+        .iradio_line-pink.checked.disabled .icheck_line-icon {
+            background-position: -45px 0;
+        }
 
 /* Retina support */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (-moz-min-device-pixel-ratio: 1.5),
        only screen and (-o-min-device-pixel-ratio: 3/2),
        only screen and (min-device-pixel-ratio: 1.5) {
-    .icheckbox_flat-pink,
-    .iradio_flat-pink {
-        background-image: url(pink@2x.png);
-        -webkit-background-size: 176px 22px;
-        background-size: 176px 22px;
+    .icheckbox_line-pink .icheck_line-icon,
+    .iradio_line-pink .icheck_line-icon {
+        background-image: url(line@2x.png);
+        -webkit-background-size: 60px 13px;
+        background-size: 60px 13px;
     }
 }
