@@ -1,7 +1,7 @@
-/* iCheck plugin Square skin, red
+/* iCheck plugin Square skin, black
 ----------------------------------- */
-.icheckbox_square-red,
-.iradio_square-red {
+.icheckbox_square,
+.iradio_square {
     display: inline-block;
     *display: inline;
     vertical-align: middle;
@@ -9,42 +9,42 @@
     padding: 0;
     width: 22px;
     height: 22px;
-    background: url(red.png) no-repeat;
+    background: url(square.png) no-repeat;
     border: none;
     cursor: pointer;
 }
 
-.icheckbox_square-red {
+.icheckbox_square {
     background-position: 0 0;
 }
-    .icheckbox_square-red.hover {
+    .icheckbox_square.hover {
         background-position: -24px 0;
     }
-    .icheckbox_square-red.checked {
+    .icheckbox_square.checked {
         background-position: -48px 0;
     }
-    .icheckbox_square-red.disabled {
+    .icheckbox_square.disabled {
         background-position: -72px 0;
         cursor: default;
     }
-    .icheckbox_square-red.checked.disabled {
+    .icheckbox_square.checked.disabled {
         background-position: -96px 0;
     }
 
-.iradio_square-red {
+.iradio_square {
     background-position: -120px 0;
 }
-    .iradio_square-red.hover {
+    .iradio_square.hover {
         background-position: -144px 0;
     }
-    .iradio_square-red.checked {
+    .iradio_square.checked {
         background-position: -168px 0;
     }
-    .iradio_square-red.disabled {
+    .iradio_square.disabled {
         background-position: -192px 0;
         cursor: default;
     }
-    .iradio_square-red.checked.disabled {
+    .iradio_square.checked.disabled {
         background-position: -216px 0;
     }
 
@@ -53,9 +53,9 @@
        only screen and (-moz-min-device-pixel-ratio: 1.5),
        only screen and (-o-min-device-pixel-ratio: 3/2),
        only screen and (min-device-pixel-ratio: 1.5) {
-    .icheckbox_square-red,
-    .iradio_square-red {
-        background-image: url(red@2x.png);
+    .icheckbox_square,
+    .iradio_square {
+        background-image: url(square@2x.png);
         -webkit-background-size: 240px 24px;
         background-size: 240px 24px;
     }
